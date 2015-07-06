@@ -43,12 +43,12 @@ dane_af <- htrgnt_sound(sound_af)
 dane_af10 <- htrgnt_sound(sound_af10)
 dane_bp <- htrgnt_sound(sound_bp)
 dane_lp <- htrgnt_sound(sound_lp)
+dane_bp <-htrgnt_sound(sound_bp)
 dane_lp_af <- htrgnt_sound(sound_lp_af)
-dane_bp_af <- htrgnt_sound(sound_bp_af)
+dane_bp_af <-htrgnt_sound(sound_bp_af)
 
-dane_whole <- rbind(dane_raw, dane_af, dane_af10, dane_bp, dane_lp, dane_lp_af,
-                    dane_bp_af)
-
-row.names(dane_whole) <- c("raw", "af", "af10", "bp", "lp", "lp_af", "bp_af")
+dane_whole <- rbind(dane_raw, dane_af, dane_af10, dane)
 spectro(sound_af)
+
+
 
